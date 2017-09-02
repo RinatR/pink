@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <div class="page-wrapper">
+    <header class="main-header">
+      <a class="logo" href="#"></a>
+      <nav class="main-menu">
+      <ul class="main-menu__list">
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">Главная</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">Фотографии</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">Конкурс</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">HTML Academy</a>
+        </li>
+      </ul>
+      <<button class="main-menu__toggle" type="button" id="toggle"></button>
+      </nav>
+    </header>
+    <main class="main-content">
+      <section class="page-header">
+        <h1 class="page-header__text">Конкурс на самое безбашенное путешествие в Пинк</h1>
+      </section>
+      <section class="feedback">
+        <div class="section-header">
+          <p class="section-header__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+        </div>
+        <form class="feedback-form" action="/echo">
+          <fieldset class="feedback-form__block feedback-form__block--bio">
+            <div class="feedback-form__control">
+              <label class="feedback-form__label" for="surname">Фамилия:</label>
+              <input class="feedback-form__input" type="text" id="surname" required placeholder="Укажите фамилию*">
+            </div>
+            <div class="feedback-form__control">
+              <label class="feedback-form__label" for="name">Имя:</label>
+              <input class="feedback-form__input" type="text" id="name" required placeholder="Введите ваше имя*">
+            </div>
+            <div class="feedback-form__control">
+              <label class="feedback-form__label" for="patronymic">Отчество:</label>
+              <input class="feedback-form__input" type="text" id="patronymic" placeholder="Ну и отчество тоже">
+            </div>
+          </fieldset>
+          <fieldset class="feedback-form__block feedback-form__block--achievments">
+            <h2 class="feedback-form__title">Ваши безбашенные достижения в путешествиии</h2>
+            <div class="feedback-form__control">
+              <input class="feedback-form__checkbox" type="checkbox" name="selfie" id="selfie" checked>
+              <label class="feedback-form__label" for="selfie">Сделал селфи с акулой</label>
+            </div>
+            <div class="feedback-form__control">
+              <input class="feedback-form__checkbox" type="checkbox" name="beach" id="beach" checked>
+              <label class="feedback-form__label" for="beach">Обгорел на пляже</label>
+            </div>
+            <div class="feedback-form__control">
+              <input class="feedback-form__checkbox" type="checkbox" name="chack" id="chack">
+              <label class="feedback-form__label" for="chack">Видел Чака Норриса</label>
+            </div>
+            <div class="feedback-form__control">
+              <input class="feedback-form__checkbox" type="checkbox" name="souvenirs" id="souvenirs">
+              <label class="feedback-form__label" for="souvenirs">Накупил сувениров</label>
+            </div>
+            <div class="feedback-form__control">
+              <input class="feedback-form__checkbox" type="checkbox" name="tower" id="tower" checked>
+              <label class="feedback-form__label" for="tower">Удержал башню</label>
+            </div>
+            <div class="feedback-form__control">
+              <input class="feedback-form__checkbox" type="checkbox" name="hotel" id="hotel">
+              <label class="feedback-form__label" for="hotel">Разгромил отель</label>
+            </div>
+          </fieldset>
+          <fieldset class="feedback-form__block feedback-form__block--contacts">
+            <div class="feedback-form__control">
+              <label class="feedback-form__label" for="phone-number">Номер телефона:</label>
+              <input class="feedback-form__input" type="phone" id="phone-number" placeholder="Номер пожалуйста">
+            </div>
+            <div class="feedback-form__control">
+              <label class="feedback-form__label" for="e-mail">Фамилия:</label>
+              <input class="feedback-form__input" type="text" id="e-mail" required placeholder="Введите почту*">
+            </div>
+          </fieldset>
+          <fieldset class="feedback-form__block feedback-form__block--apps">
+            <h2 class="feedback-form__title">С каким приложением путешествовали?</h2>
+            <div class="feedback-form__control">
+              <input class="feedback-form__radio" type="radio" id="ios" value="ios" name="apps" checked>
+              <label class="feedback-form__label" for="ios">Пинк для iOS</label>
+            </div>
+            <div class="feedback-form__control">
+              <input class="feedback-form__radio" type="radio" id="android" value="android" name="apps">
+              <label class="feedback-form__label" for="android">Пинк для Android</label>
+            </div>
+            <div class="feedback-form__control">
+              <input class="feedback-form__radio" type="radio" id="winphone" value="winphone" name="apps">
+              <label class="feedback-form__label" for="winphone">Windows Phone</label>
+            </div>
+          </fieldset>
+          <fieldset class="feedback-form__block feedback-form__block--emotions">
+            <h2 class="feedback-form__title">Опишите свои эмоции:</h2>
+            <textarea class="feedback-form__textarea" name="descripton" id="descripton" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+          <input class="feedback-form__btn" type="submit" value="Отправить форму">
+          <span class="feedback-form__legend">* - обязательные поля</span>
+        </form>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="logo"></div>
+      <div class="socials">
+        <a class="socials__icon socials__icon--twitter" href="#"></a>
+        <a class="socials__icon socials__icon--facebook" href="#"></a>
+        <a class="socials__icon socials__icon--youtube" href="#"></a>
+      </div>
+      <div class="main-footer__copyright">
+        <span class="main-footer__copyright-text">Разработано</span>
+        <a class="main-footer__copyright-icon" href="#" >
+        </a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
