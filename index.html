@@ -10,14 +10,17 @@
 <body>
   <div class="page-wrapper">
     <header class="main-header">
-      <a class="logo" href="#"> </a>
-      <nav class="main-menu">
+      <nav class="main-menu main-menu--opened">
+        <div class="main-menu__inner">
+          <a class="logo" href="#"></a>
+          <button class="main-menu__toggle" type="button" id="toggle"></button>
+        </div>
         <ul class="main-menu__list">
           <li class="main-menu__item">
-            <a class="main-menu__link" href="#">Главная</a>
+            <a class="main-menu__link" href="index.html">Главная</a>
           </li>
           <li class="main-menu__item">
-            <a class="main-menu__link" href="#">Фотографии</a>
+            <a class="main-menu__link" href="photo.html">Фотографии</a>
           </li>
           <li class="main-menu__item">
             <a class="main-menu__link" href="#">Конкурс</a>
@@ -26,13 +29,11 @@
             <a class="main-menu__link" href="#">HTML Academy</a>
           </li>
         </ul>
-        <button class="main-menu__toggle" type="button" id="toggle"></button>
       </nav>
     </header>
     <main class="main-content">
       <section class="promo">
         <div class="promo-header">
-
         </div>
         <h1 class="section-header visually-hidden">Взгляните на жизнь иначе!</h1>
         <div class="promo-download">
