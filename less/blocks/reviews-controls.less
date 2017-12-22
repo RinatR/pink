@@ -1,23 +1,4 @@
-.reviews-controls__trigger[id="rev1"],
-.reviews-controls__trigger[id="rev2"],
-.reviews-controls__trigger[id="rev3"] {
-  display: none;
-}
-
-#rev1 {
-
-  &:checked {
-    ~ .reviews-controls {
-        .reviews-controls__toggle[for="rev1"] {
-          border: 3px solid #283645;
-          background-color: #ffffff;
-        }
-      }
-  }
-}
-
-
-.reviews-controls__toggle {
+.reviews-controls__button {
   display: inline-block;
   vertical-align: middle;
   margin-right: 19px;
@@ -25,4 +6,25 @@
   height: 6px;
   background-color: #bfc3c8;
   border-radius: 50%;
+  cursor: pointer;
+   border: 3px solid #283645;
+
 }
+
+#item1:target {
+  transfrom: translateX(0);
+
+
+}
+
+#item2:target {
+  transfrom: translateX(-320px);
+}
+
+#item3:target {
+  transfrom: translateX(-640px);
+}
+
+
+
+

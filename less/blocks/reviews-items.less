@@ -1,11 +1,10 @@
 .reviews-items {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
   width: 300%;
+  margin-bottom: 30px;
 }
 
 .reviews__item {
+  float: left;
   width: 320px;
 }
 
@@ -24,3 +23,36 @@
   color: #283645;
   text-align: center;
 }
+
+.reviews-items__button {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 19px;
+  width: 6px;
+  height: 6px;
+  background-color: #bfc3c8;
+  border-radius: 50%;
+  cursor: pointer;
+
+}
+
+#item1:target {
+  transfrom: translateX(0);
+
+  ~ .reviews-items__button:first-of-type {
+    border: 3px solid #283645;
+  }
+}
+
+#item2:target {
+  transfrom: translateX(-320px);
+}
+
+#item3:target {
+  transfrom: translateX(-640px);
+}
+
+
+
+
+
