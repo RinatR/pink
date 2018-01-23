@@ -1,0 +1,33 @@
+.map {
+  position: relative;
+  min-height: 219px;
+  background-image:
+  url("../img/triangle-white-footer.png"),
+  url("../img/map-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% -90px,50% -400px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 36px;
+    height: 36px;
+    background-color: #ffffff;
+    border-radius: 50%;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 16px;
+    height: 16px;
+    background-color: #d22856;
+    border-radius: 50%;
+  }
+}
